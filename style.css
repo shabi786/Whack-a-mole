@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(88, 30, 174, 0.543);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20 0;
+}
+
+
+.main h1 {
+    font-size: 54px;
+    font-family: cursive;
+}
+
+.main h2 {
+    display: inline-block;
+    background: rgb(255, 181, 251);
+    border-radius: 16px;
+    margin: 6px;
+    padding: 12px 8px;
+}
+
+button {
+    margin: 6px;
+    width: 10rem;
+    padding: 12px 5px;
+    border-radius: 16px;
+    border: none;
+    background-color: rgb(209, 111, 255);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.374);
+    cursor: pointer;
+}
+
+.grid {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 160px;
+    height: 140px;
+    border: 1px solid black;
+    box-shadow: 1px 3px 5px rgb(150, 45, 255);
+    margin: 10px;
+}
+
+.mole {
+    background: url(mole.png);
+    background-size: cover;
+}
+
+#pauseGame {
+    display: none;
+}
+
+.grid {
+    display: none;
+}
+
+
+@media screen and (max-width:764px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .grid {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:462px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+}
