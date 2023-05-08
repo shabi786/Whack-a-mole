@@ -83,6 +83,9 @@ squares.forEach(square => {
             if (square.id === hitPosition) {
                 score++;
                 hitMusic.play();
+                setTimeout(() => {
+                    hitMusic.pause();
+                }, 1000);
                 scoreBoard.textContent = `Your Score: ${score}`;
                 hitPosition = null
             }
